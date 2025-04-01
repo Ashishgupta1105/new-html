@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Building Materials</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Workshop Materials</h1>
+            <input type="text" id="searchBar" placeholder="Search materials...">
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="products" class="gallery">
+            <div class="product-card" onclick="openLightbox('material1.jpg')">
+                <img src="https://4.imimg.com/data4/WN/KO/MY-3909841/wooden-logs.jpg" alt="Material 1">
+                <p>High-Quality Wood</p>
+            </div>
+            <div class="product-card" onclick="openLightbox('material2.jpg')">
+                <img src="https://worldsteel.org/wp-content/uploads/steel-tubes.jpg" alt="Material 2">
+                <p>Industrial Steel</p>
+            </div>
+            <div class="product-card" onclick="openLightbox('material3.jpg')">
+                <img src="https://blog.ipleaders.in/wp-content/uploads/2019/02/cement-analysis.jpg" alt="Material 3">
+                <p>Durable Cement</p>
+            </div>
+            <!-- Add more materials as needed -->
+        </section>
+    </main>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <img id="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ZPYvQq4aEs5i3if7wooZOhl4LNWdtcDRBw&s" src="" alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8ZPYvQq4aEs5i3if7wooZOhl4LNWdtcDRBw&s">
+    </div>
+    <script defer src="script.js"></script>
+</body>
+
+
+</html>
